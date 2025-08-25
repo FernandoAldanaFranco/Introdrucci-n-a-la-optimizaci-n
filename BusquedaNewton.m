@@ -39,11 +39,10 @@ for i=1: iteraciones
         if t>0 %mínimo local
             punto=temporal;%No actualiza le punto calculado
         else
-        end
-    else
-        
+        end 
     end
 end
 %Evalua la función en los últimos dos puntos para obtener una respuesta
 punto
+
 subs(f,x,punto)
