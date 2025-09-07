@@ -1,4 +1,4 @@
-%Algoritmo de optimización búsqueda de Newton.
+%Algoritmo de optimización búsqueda de Gradiente mejorada con tasa de aprendizaje fija.
 %Fernando Aldana
 %Agosto 2025
 %Ejemplo basado en la función (x-2)^2 en el intervalo [a,b]
@@ -23,7 +23,6 @@ alpha=0.1; %tasa de aprendizaje
 %%
 %Proceso iterativo
 for i=1: iteraciones
-    %dx=subs(f,x,y,punto); %Evalua función, 
     dx=-1*subs(fx,[x,y],[a,b]); %componente x del vector d
     dy=-1*subs(fy,[x,y],[a,b]); %componente y del vector d
     a=a+(alpha*dx); %Actuaiza valores en x
@@ -34,3 +33,4 @@ end
 double(a) %Imprime el resultado de la optimización 
 double(b) %En una representación decimal
 double(subs(f,[x,y],[a,b])) %tipo double
+
