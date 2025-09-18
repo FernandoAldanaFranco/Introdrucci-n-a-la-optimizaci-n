@@ -1,4 +1,4 @@
-%Algoritmo de optimización búsqueda de Newton (multivariable).
+%Algoritmo de optimización Levenberg - Marquadt.
 %Fernando Aldana
 %Septiembre 2025
 %Ejemplo basado en la función (x-2)^2 en el intervalo [a,b]
@@ -88,3 +88,4 @@ end
 double(puntos(1,1)) %Imprime el resultado de la optimización 
 double(puntos(2,1)) %En una representación decimal
 double(se) %tipo double
+
